@@ -313,7 +313,7 @@ public class Stable {
         
         
         	} catch (IOException e) {
-        	    //exception handling left as an exercise for the reader
+        	    //exception handling
         	}
         
     
@@ -351,12 +351,11 @@ public class Stable {
 	
 	public static void combination(Object[]  elements, int K){
 		 
-        // get the length of the array
-        // e.g. for {'A','B','C','D'} => N = 4 
+
         int N = elements.length;
          
         if(K > N){
-            System.out.println("Invalid input, K > N");
+            System.out.println("Invalid input");
             return;
         }
         // calculate the possible combinations
@@ -367,22 +366,14 @@ public class Stable {
         // e.g. 01 --> AB , 23 --> CD
         int combination[] = new int[K];
          
-        // position of current index
-        //  if (r = 1)              r*
-        //  index ==>        0   |   1   |   2
-        //  element ==>      A   |   B   |   C
+
         int r = 0;      
         int index = 0;
          
         while(r >= 0){
-            // possible indexes for 1st position "r=0" are "0,1,2" --> "A,B,C"
-            // possible indexes for 2nd position "r=1" are "1,2,3" --> "B,C,D"
-             
-            // for r = 0 ==> index < (4+ (0 - 2)) = 2
             if(index <= (N + (r - K))){
                     combination[r] = index;
                      
-                // if we are at the last position print and increase the index
                 if(r == K-1){
                     print(combination, elements, K);
                     index++;                
@@ -408,9 +399,7 @@ public class Stable {
 		int nrf=fact(n-r);
 		int npr=nf/nrf;
 		int ncr=npr/rf; 
-		
 		System.out.println("C("+n+","+r+") = "+ ncr);
-
 		return ncr;
 	}
 	
@@ -423,6 +412,7 @@ public class Stable {
 	}
 	
 
+	/* Print each iteration */
 	public static void print(int[] combination, Object[] elements, int number){
 
 		String[] skills = new String [number];
@@ -437,14 +427,15 @@ public class Stable {
     
     /* Main */
     public static void main(String[] args) {
-    	    	
+    	 
+    	// We are now interested between these languages, what we should offer as training
         Object[] elements = new Object[] {"C", "C++", "Python", "R", "Julia", "Ruby", "Java", "Javascript", "SQL", "Scala", "Perl"};
-        combination(elements,1);
-        combination(elements,2);
-        combination(elements,3);
-        combination(elements,4);
-        combination(elements,5);
-    	
+        combination(elements,1); // Set of 1 course
+        combination(elements,2); // Set of 2 courses
+        combination(elements,3); // Set of 3 courses
+        combination(elements,4); // Set of 4 courses
+        combination(elements,5); // Set of 5 courses
+
     }
     
     
