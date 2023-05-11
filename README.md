@@ -1,5 +1,5 @@
 # Stable
-Optimal Selection of Training Courses for Unemployed People based on Stable Marriage Mode
+Optimal Selection of Training Courses for Unemployed People based on Stable Marriage Model
  
 
  
