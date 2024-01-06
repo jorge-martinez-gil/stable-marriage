@@ -1,11 +1,13 @@
-# Stable
-Optimal Selection of Training Courses for Unemployed People based on Stable Marriage Model
+# Stable: Optimal Training Course Selection for Unemployed People
+### Utilizing the Stable Marriage Model for Enhanced Outcomes
 
-There are two implemntation versions:
+Welcome to **Stable**, a unique project designed to facilitate optimal selection of training courses for unemployed individuals using a novel variant Stable Marriage Model. Our goal is to empower unemployed individuals by matching them with the most suitable training courses, thus enhancing their chances of securing employment.
 
-- Java version (original)
-- Python version
- 
+## 🌟 Features
+- **Two Implementation Versions**: Our project is available in two different programming languages for broader accessibility and usability.
+  - **Java Version**: The original implementation, offering robust performance and wide compatibility.
+  - **Python Version**: A modern take on the project, providing ease of use and flexibility.
+
 
 ## Citation
 Jorge Martinez-Gil, Bernhard Freudenthaler: Optimal Selection of Training Courses for Unemployed People based on Stable Marriage Model. iiWAS 2019: 260-266
